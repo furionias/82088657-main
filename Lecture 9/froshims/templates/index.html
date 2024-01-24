@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html>
+
+
+<head>
+
+</head>
+<body>
+    <title>Hello</title>
+
+    {% block body %}
+    <form action="/register" method="post">
+
+         <input autofocus name="name" placeholder="name" type="text">
+         <select>
+            <option selected disabled>Sport</option>
+            <option value="Basketball">Basketball </option>
+
+         </select>
+    </form>
+ {% endblock %}
+</body>
+
+</html>

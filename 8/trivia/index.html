@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function checkanswer(button) {
+                var answer = button.getAttribute('data');
+                var response = document.getElementById('response');
+
+                if (answer === 'correct'){
+                    button.style.backgroundColor = 'green';
+                    response.innerHTML = 'correct';
+                    response.style.color = "green"
+                }
+
+                else {
+                   button.style.backgroundColor = 'red';
+                   response.innerHTML = 'incorrect';
+                   response.style.color = "red"
+                }
+
+
+            }
+
+            function checkResponses(){
+                var text_input = document.getElementById('text-answer');
+                var response = document.getElementById('text-response');
+                var answer = text_input.value;
+
+                if (answer === 'Koning' || 'koning'){
+
+
+                      text_input.style.backgroundColor = 'green';
+                      response.innerHTML = 'correct';
+                      response.style.color = "green";
+
+                }
+                else{
+                        text_input.style.backgroundColor = 'red';
+                        response.innerHTML = 'incorrect';
+                        response.style.color = "red";
+
+                }
+                }
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3> What is the largest mammal in the World? </h3>
+                <button data="correct" onclick=checkanswer(this)>Whale</button>
+                <button data="incorrect" onclick=checkanswer(this)>Lion</button>
+                <button data="incorrect" onclick=checkanswer(this)>Tortoise</button>
+                <button data="incorrect" onclick=checkanswer(this)>Elephant</button>
+                <div id="data"></div>
+
+
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3> What is the Dutch word for king?</h3>
+                <input type="text" id="text-answer">
+                <button onclick="checkResponses()">Go</button>
+
+                <div id="text-response"></div>
+            </div>
+        </div>
+    </body>
+</html>

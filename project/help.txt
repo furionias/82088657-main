@@ -1,0 +1,46 @@
+files:
+ create - create files
+ read - read files
+ write -to files
+
+os:
+ mkdir - make directory
+ rmdir - remove directory
+ replace - switches the locations of two files
+ listdir - list directory
+
+
+time
+  current time - gets current time
+
+create an array - creates an array
+create a 2D array - creates 2D array
+
+games:
+
+  1 - random number guessing game
+  2 - word guessing game
+  3 - rock, paper and scissors
+
+help - allows user to get commands
+memory refresh - allows user to refresh supply of memory
+memory amount - gets memory amount
+calculator - allows user to use calculator
+easteregg - opens Easter egg file
+
+numpy:
+
+ array - creates an array
+ 2D array - creates 2D array
+
+attendance:
+  - gets attendance from the user from a set amount of days
+
+refresh data:
+  refreshes data
+
+quiz:
+  quizzes the user
+
+requests:
+ gets data from website

@@ -1,0 +1,6 @@
+typedef = a way of changing the name identifier of a data typer
+Example:
+  typedef struct{
+    strung name;
+    string number
+  } person;

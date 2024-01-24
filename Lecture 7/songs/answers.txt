@@ -1,0 +1,28 @@
+SELECT name from songs;
+
+SELECt name from songs
+ORDER BY tempo ASC;
+
+select name from songs
+Order by duration_ms DESC
+LIMIT 5
+
+select name from songs
+Where danceability > 0.75 AND energy > 0.75 AND valence > 0.75;
+
+SELECT AVG(energy) from songs;
+
+SELECT s. name from songs s
+JOIN artists a ON s.artist_id = a.id
+Where a.name = 'Post Malone';
+
+SELECT AVG(energy) as avg_energy
+From songs
+Where artist_id = (
+    Select if from artists where name = 'Drake'
+)
+
+SELECT name from songs
+Where name LIKE '%feat.%';
+
+

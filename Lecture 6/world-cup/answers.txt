@@ -1,0 +1,17 @@
+Times:
+
+10 simulations: TODO (record time using 0m0.000s format)
+100 simulations: 0.056s
+1000 simulations: 0.034s
+10000 simulations: 0.088s
+100000 simulations: 0.646s
+1000000 simulations: 6.457s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+  100 simulations will run the fastest
+  1000000 simulations will take the longest
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?: 100

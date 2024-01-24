@@ -1,0 +1,3 @@
+Hello, this is my CS50 Project and I hope you enjoy it.
+I have used classes, functions and numpy
+Thank you, CS50 for teaching me throughout the course
